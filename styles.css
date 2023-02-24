@@ -1,6 +1,7 @@
 
-.next-joke {
+#next-joke {
     background-color: #3ED3DD;
+    width: 130px;
     border: none;
     border-radius: 10px;
 }
@@ -8,4 +9,12 @@
 .joke-box {
     border: none;
     border-radius: 10px;
+}
+
+.rate {
+    background-color: #3ED3DD;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    display: none;
 }
