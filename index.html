@@ -6,25 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <a target="_blank" href="https://icons8.com/icon/42811/happy"></a><a target="_blank" href="https://icons8.com"></a>
     <title>Jokes</title>
 
 </head>
 <body>
-    <div class="m-0">
-        <p id="weather"></p>
+    <div class="d-flex justify-content-start align-items-center temperature p-4">
+        <span id="weather-icon" class="mx-3"></span>
+        <span id="degrees"></span>
     </div>
-    <div class="col-12 d-flex justify-content-center align-items-center vh-100">
-        <div class="joke-box row flex-column align-items-center my-5 shadow">
-            <h1 class="col-12 d-flex justify-content-center px-5 my-5">Ready to laugh?😂</h1>
-            <p id="joke" class="d-flex justify-content-center p-2"></p>
+    <div class="side-blob-1"></div>
+    <div class="col-12 d-flex justify-content-center align-items-center vh-90">
+        <div class="joke-box p-5 d-flex flex-column justify-content-center align-items-center">
+            <h3 class="col-12 d-flex justify-content-center px-5 my-5 text-white">Ready to laugh?😂</h3>
+            <p id="joke" class="d-flex col-7 justify-content-center px-5 text-white"></p>
             <div class="col-12 d-flex justify-content-center mt-3">
-                <button id="rate-one" class="rate mx-1">1</button>
-                <button id="rate-two" class="rate mx-1">2</button>
-                <button id="rate-three" class="rate mx-1">3</button>
+                <button id="rate-one" class="rate mx-1">
+                    <img src="images/icons8-weary-face-48.png" alt="">
+                </button>
+                <button id="rate-two" class="rate mx-1">
+                    <img src="images/icons8-expressionless-face-48.png" alt="">
+                </button>
+                <button id="rate-three" class="rate mx-1">
+                    <img src="images/icons8-smiling-face-with-smiling-eyes-48.png" alt="">
+                </button>
             </div>
-            <button onclick="nextJoke()" id="next-joke" class="py-2 my-3">Next Joke</button>
+            <button onclick="nextJoke()" id="next-joke" class="border-rounded mb-4 mt-2 px-4 py-1 rounded-pill">Next Joke</button>
         </div>
     </div>
+    <div class="side-blob-2"></div>
 
 
     <script src="script.js"></script>
