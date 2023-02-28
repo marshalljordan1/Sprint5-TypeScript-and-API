@@ -1,20 +1,68 @@
+.body {
+    scroll-padding-top: 100%;
+    height: 100vh;
+}
 
-#next-joke {
-    background-color: #3ED3DD;
-    width: 130px;
-    border: none;
-    border-radius: 10px;
+#weather-icon {
+    border-right: solid 2px black;
+    padding-right: 5px;
 }
 
 .joke-box {
+    background-image: url('/images/blob\ \(1\).svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 5%;
+    height: 700px;
+    width: 900px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.joke-box.blob-2 {
+    background-image: url('/images/blob\ \(2\).svg');
+}
+
+.joke-box.blob-3 {
+    background-image: url('/images/blob\ \(3\).svg');
+    position: absolute;
+    bottom: 0%;
+    left: 15%;
+}
+
+.joke-box.blob-4 {
+    background-image: url('/images/blob\ \(4\).svg');
+}
+
+.joke-box.blob-5 {
+    background-image: url('/images/blob\ \(5\).svg');    
+}
+
+.side-blob-1 {
+    background-image: url('/images/blob\ \(9\).svg');
+    padding: 60px;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+
+.side-blob-2 {
+    background-image: url('/images/blob\ \(10\).svg');
+    padding: 60px;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+
+#next-joke {
+    background-color: #edc951;
     border: none;
-    border-radius: 10px;
+    color: white;
+    font-weight: light;
 }
 
 .rate {
-    background-color: #3ED3DD;
-    padding: 5px 15px;
+    background-color: transparent;
     border: none;
-    border-radius: 10px;
-    display: none;
 }
